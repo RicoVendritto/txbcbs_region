@@ -13,7 +13,14 @@ def main():
     with open('dev_source.csv', 'r', encoding='utf-8-sig') as source:
         provider_data = csv.DictReader(source)
         for row in provider_data:
-            update_region(row["Providers Provider ID"], row["Final Region"])
+            provider = row["Providers Provider ID"]
+            region = row["Final Region"]
+            if validate_source(provider, region):
+                update_region(provider, region)
+
+
+def validate_source(provider, region):
+    return True if provider and region in mapping else False
 
 
 def reference_region(region):
