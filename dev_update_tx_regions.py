@@ -4,7 +4,7 @@ import json
 
 
 mapping = {'Region 1': 69, 'Region 2': 70, 'Region 3': 71}
-access_key = {"authorization": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1MzdiNmNlZTBiYmIyMzM5NDViNDhmMzQzZjU3OTE1YmY5ZDRiZjdkY2NkZDgwMTc2ZmRlOTQxN2NkMWE4NGQyIiwic3ViIjoiOSIsImV4cCI6MTY2MTg1MDAwMCwiaXNzIjoiSGVhZHdheSIsInNjb3BlcyI6WyJkZWZhdWx0Il0sImlhdCI6MTY2MTc4MTE1MCwicm9sZXMiOlsiQVRMQVNfVVNFUiIsIlpPQ0RPQyIsIkFETUlOIiwiUFJPVklERVJfSU1QRVJTT05BVE9SIiwiUEFUSUVOVF9JTVBFUlNPTkFUT1IiLCJJTlRFUk5BTF9XRUJIT09LIiwiUEhJX1ZJRVdFUiJdfQ.emYwK0mEFFL7hnQV_uMuvpfDy7HlKs_z7210QwETYRQ"}
+access_key = {"authorization": "bearer xxx"}
 dev_url = "http://localhost:5000/provider/"
 prod_url = "https://headway.co/provider/"
 test_file = "dev_source.csv"
