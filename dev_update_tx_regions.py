@@ -47,7 +47,7 @@ def update_region(provider_id, region):
         res = requests.put(f"{prod_url}{provider_id}",
                            headers=access_key,
                            data=json_body)
-        if res.status_code != 200 and res.status_code != 210:
+        if res.status_code != 200 and res.status_code != 204:
             print(
                 f"{res.status_code} - {provider_id} - {region} - Failed to update provider's {provider_id} region")
             # print(res.json())
